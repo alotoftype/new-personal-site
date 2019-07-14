@@ -24,7 +24,7 @@ const Template = ({ children }) => {
             <Menu />
             {children}
           </div>
-          <Footer />
+          <Footer author={config.author}/>
         </>
       </ThemeProvider>
       <GlobalStyle />
