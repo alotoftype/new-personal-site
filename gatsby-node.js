@@ -27,7 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.slice(postsPerFirstPage).length / postsPerPage
       )
 
-      // Create main home page
+      // Create Blog page
       createPage({
         path: `/blog/`,
         component: path.resolve(`./src/templates/blog.js`),

@@ -17,8 +17,14 @@ const List = styled.ul`
   align-items: flex-start;
   width: 100%;
   border-top: 1px solid ${props => props.theme.colors.secondary};
-  padding: 1em 0 2em;
-  margin: 0 1.5em;
+  padding: 1em 0 0.5em;
+  margin: 0 1 em;
+`
+
+const Copywright = styled.p`
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 `
 
 const Item = styled.li`
@@ -41,40 +47,22 @@ const Item = styled.li`
   }
 `
 
-const Footer = () => (
+const Footer = ({ author, copywright }) => (
   <Wrapper>
     <List>
       <Item>
-        <a
-          href="https://www.contentful.com/"
-          rel="nofollow noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            src="https://images.ctfassets.net/fo9twyrwpveg/44baP9Gtm8qE2Umm8CQwQk/c43325463d1cb5db2ef97fca0788ea55/PoweredByContentful_LightBackground.svg"
-            style={{ width: '100px' }}
-            alt="Powered by Contentful"
-          />
+        <a href={author.github_url} target="_blank" rel="noopener noreferrer">
+          {author.github_name}
         </a>
       </Item>
       <Item>
-        <a
-          href="https://github.com/ryanwiemer/gatsby-starter-gcn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          gatsby-starter-gcn
-        </a>{' '}
-        by{' '}
-        <a
-          href="https://github.com/ryanwiemer"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @ryanwiemer
-        </a>
+        <a href={author.dribble_url}>dribble</a>
+      </Item>
+      <Item>
+        <a href={author.instagram}>instagram</a>
       </Item>
     </List>
+    <Copywright>{copywright}</Copywright>
   </Wrapper>
 )
 

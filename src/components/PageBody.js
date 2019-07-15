@@ -16,13 +16,13 @@ const Body = styled.div`
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   p {

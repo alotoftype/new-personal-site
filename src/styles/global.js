@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     /* stylelint-disable-next-line */
     font: inherit;
     vertical-align: baseline;

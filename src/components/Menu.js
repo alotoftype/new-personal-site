@@ -51,17 +51,12 @@ const Menu = () => {
         <ul>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              SMJR.US
             </Link>
           </li>
           <li>
             <Link to="/about/" activeStyle={activeLinkStyle}>
               About
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog/" activeStyle={activeLinkStyle}>
-              Blog
             </Link>
           </li>
           <li>
