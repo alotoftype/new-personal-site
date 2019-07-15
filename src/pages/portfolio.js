@@ -14,7 +14,7 @@ const Portfolio = ({ pageContext }) => {
     <Layout>
       <SEO />
       <Helmet>
-        <title>{`${config.siteTitle} - Page ${currentPage}`}</title>
+        <title>{`${config.siteTitle} - Page Portfolio `}</title>
       </Helmet>
       <Container>
         <h1>Portfolio</h1>
